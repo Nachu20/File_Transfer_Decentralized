@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style/index.css" rel="stylesheet">
+    <title>BlobShare</title>
+</head>
+
+<body>
+    <div id="dialog-bg">
+    </div>
+    
+    <dialog id="dialog">
+        <div id="progress-dialog" style="height: 100%;">
+            <div id="dialog-header">
+                <div id="title-dialog" class="textHover">Current Process</div>
+                <div class="close-dialog">x</div>
+            </div>
+            <div id="progress-container">
+            </div>
+        </div>
+        <div id="pairing">
+            <span id="pairing-label" class="textHover">Pairing ....</span>
+        </div>
+        <div id="declined">
+            <div class="close-dialog">x</div>
+            <span id="reject-label" class="textHover">Peer rejected to connect</span>
+        </div>
+        <div id="reqpeer">
+            <div id="dialog-message"></div>
+            <button id="decline">Decline</button>
+            <button id="accept">Accept</button>
+        </div>
+    </dialog>
+    <dialog id="choose-dialog">
+        <div id="close-dialog">x</div>
+        
+    </dialog>
+    <div id="header">
+        <a id="header-title" href="">b l o b s h a r e . n i o n e . o n l i n e</a>
+    </div>
+    <div id="main">
+        <div id="active-users">
+            <div id="active-users-title">
+                <span class="textHover">Active Users</span>
+                <span id="user-label" class="textHover"></span>
+            </div>
+            <div id="active-users-container">
+
+            </div>
+        </div>
+        <div id="right-panel">
+            <div id="file-choose">
+                <div id="drag-drop">
+                    <div class="textHover">Drop your files</div>
+                    <div class="textHover">here</div>
+                </div>
+                <div id="input-file-label">
+                    <div>Choose Files</div>
+                </div>
+                <input type="file" id="input-file" multiple="multiple" />
+            </div>
+            <div id="file-list">
+                <div id="file-list-header">
+                    <div id="file-list-title" class="textHover">File List</div>
+                    <div id="select-all" class="textHover">Select All</div>
+                    <div id="unselect-all" class="textHover">UnSelect</div>
+                    <div id="clear-files" class="textHover">Clear</div>
+                </div>
+                <div id="file-list-container">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+            <a id="send-dialog">
+                Transfer Dialog
+            </a>
+    </div>
+    <div id="file-sharing-steps">
+        <div class="step">Step 1: Check your nick name of the device at the top left corner of the website</div>
+        <div class="step">Step 2: Check your colleagues' names in the list of users and select the desired recipient</div>
+        <div class="step">Step 3: Choose files and click on the arrow next to the desired receiver</div>
+        <div class="step">Step 4: The recipient needs to accept or decline the connection request</div>
+        <div class="step">Step 5: After acceptance, files will be transferred</div>
+    </div>
+</body>
+
+</html>
+
+<script src="script/jquery.js"></script>
+
+<script type="text/javascript" src="script/index.js">
+
+</script>
